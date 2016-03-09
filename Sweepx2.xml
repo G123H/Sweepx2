@@ -10,35 +10,6 @@
       <block type="controls_if" id="28" inline="false">
         <mutation elseif="1" else="1"></mutation>
         <value name="IF0">
-          <block type="logic_compare" id="40" inline="true">
-            <field name="OP">LT</field>
-            <value name="A">
-              <block type="sensor_object" id="56">
-                <field name="OBJECT">LEFTSIDE</field>
-              </block>
-            </value>
-            <value name="B">
-              <block type="math_number" id="49">
-                <field name="NUM">60</field>
-              </block>
-            </value>
-          </block>
-        </value>
-        <statement name="DO0">
-          <block type="movement_setmotors" id="74" inline="true">
-            <value name="BOTHMOVLEFT">
-              <block type="math_number" id="77">
-                <field name="NUM">50</field>
-              </block>
-            </value>
-            <value name="BOTHMOVRIGHT">
-              <block type="math_number" id="78">
-                <field name="NUM">100</field>
-              </block>
-            </value>
-          </block>
-        </statement>
-        <value name="IF1">
           <block type="logic_compare" id="41" inline="true">
             <field name="OP">GT</field>
             <value name="A">
@@ -53,7 +24,7 @@
             </value>
           </block>
         </value>
-        <statement name="DO1">
+        <statement name="DO0">
           <block type="movement_setmotors" id="79" inline="true">
             <value name="BOTHMOVLEFT">
               <block type="math_number" id="80">
@@ -63,6 +34,35 @@
             <value name="BOTHMOVRIGHT">
               <block type="math_number" id="81">
                 <field name="NUM">50</field>
+              </block>
+            </value>
+          </block>
+        </statement>
+        <value name="IF1">
+          <block type="logic_compare" id="40" inline="true">
+            <field name="OP">LT</field>
+            <value name="A">
+              <block type="sensor_object" id="56">
+                <field name="OBJECT">LEFTSIDE</field>
+              </block>
+            </value>
+            <value name="B">
+              <block type="math_number" id="49">
+                <field name="NUM">60</field>
+              </block>
+            </value>
+          </block>
+        </value>
+        <statement name="DO1">
+          <block type="movement_setmotors" id="74" inline="true">
+            <value name="BOTHMOVLEFT">
+              <block type="math_number" id="77">
+                <field name="NUM">50</field>
+              </block>
+            </value>
+            <value name="BOTHMOVRIGHT">
+              <block type="math_number" id="78">
+                <field name="NUM">100</field>
               </block>
             </value>
           </block>
